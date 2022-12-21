@@ -10,4 +10,4 @@ spring:
       - id: freelancer
         uri: lb://FREELANCER-API
         predicates:
-        - Path=/freelancer/**
+        - Path=/**
