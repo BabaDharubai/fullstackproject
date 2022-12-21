@@ -1,0 +1,13 @@
+eureka:
+  client:
+    service-url:
+      default-zone: http://EUREKA-SERVER
+      
+spring:
+   cloud:
+    gateway:
+      routes:
+      - id: freelancer
+        uri: lb://FREELANCER-SERVICE
+        predicates:
+        - Path=/freelancer/**
