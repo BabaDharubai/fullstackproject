@@ -8,6 +8,6 @@ spring:
     gateway:
       routes:
       - id: freelancer
-        uri: lb://FREELANCER-SERVICE
+        uri: lb://FREELANCER-API
         predicates:
         - Path=/freelancer/**
