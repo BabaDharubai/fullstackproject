@@ -2,5 +2,5 @@ spring:
   main:
     allow-circular-references: true
     
-userName: baba
-password: baba
+userName: "baba"
+password: "baba"
