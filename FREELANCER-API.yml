@@ -6,3 +6,4 @@ userName: baba
 password: baba
 portNo: 5984
 hostName: localhost
+dbName: freelancer
