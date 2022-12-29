@@ -2,8 +2,8 @@ spring:
   main:
     allow-circular-references: true
     
-userName: baba
-password: baba
-portNo: 5984
-hostName: localhost
-dbName: freelancer
+db.user: baba
+db.password: baba
+db.portNo: 5984
+db.hostName: localhost
+db.name: freelancer
