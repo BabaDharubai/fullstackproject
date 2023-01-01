@@ -3,3 +3,10 @@ db.password: baba
 db.portNo: 5984
 db.hostName: localhost
 db.name: freelancer
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:8080/realms/freelancer
