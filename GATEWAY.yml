@@ -2,12 +2,34 @@ eureka:
   client:
     service-url:
       default-zone: http://EUREKA-SERVER
-      
+     
+     
 spring:
    cloud:
     gateway:
+    
+      default-filters:
+
+        - DedupeResponseHeader=Access-Control-Allow-Credentials Access-Control-Allow-Origin
+
+      globalcors:
+
+        corsConfigurations:
+
+          '[/**]':
+
+              allowedOrigins: "*"
+
+              allowedMethods: "*"
+
+              allowedHeaders: "*"
       routes:
-      - id: freelancer
-        uri: lb://FREELANCER-API
+      - id: freelancer-cud-service
+        uri: lb://FREELANCER-CUD-API
         predicates:
-        - Path=/**
+        - Path=/freelancer-cud-api/**
+        
+      - id: freelancer-retrieve-service
+        uri: lb://FREELANCER-RETRIEVE-API
+        predicates:
+        - Path=/freelancer-retrieve-api/**
