@@ -1,7 +1,7 @@
 db.user: baba
 db.password: baba
 db.portNo: 5985
-db.hostName: localhost
+db.hostName: couchdb
 db.name: freelancer
 
 spring:
