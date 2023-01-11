@@ -1,6 +1,6 @@
 db.user: baba
 db.password: baba
-db.portNo: 5985
+db.portNo: 5984
 db.hostName: localhost
 db.name: freelancer
 
